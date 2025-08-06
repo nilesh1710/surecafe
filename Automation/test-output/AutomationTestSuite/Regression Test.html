@@ -1,12 +1,17 @@
 <html>
 <head>
-<title>TestNG:  Regression Test</title>
+<title>TestNG: Regression Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
-.log { display: none;} 
-.stack-trace { display: none;} 
+.log {
+	display: none;
+}
+
+.stack-trace {
+	display: none;
+}
 </style>
 <script type="text/javascript">
 <!--
@@ -53,37 +58,58 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Regression Test</h2><table border='1' align="center">
-<tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
-</tr><tr>
-<td>Started on:</td><td>Thu Jul 03 16:35:46 IST 2025</td>
-</tr>
-<tr><td>Total time:</td><td>410 seconds (410640 ms)</td>
-</tr><tr>
-<td>Included groups:</td><td></td>
-</tr><tr>
-<td>Excluded groups:</td><td></td>
-</tr>
-</table><p/>
-<small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='TestSuite.TC12_Verifyremoveprofilepicture.ProfilePcture()'><b>ProfilePcture</b><br>Test class: TestSuite.TC12_Verifyremoveprofilepicture<br/>
-<a href="#Output-1906128360" onClick='toggleBox("Output-1906128360", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1906128360" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1906128360">
-<a href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Failure_Screenshots\ProfilePcture_03_07_2025_04_42_36.png'><img src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Failure_Screenshots\ProfilePcture_03_07_2025_04_42_36.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Profile&apos;]&quot;}
+	<h2 align='center'>Regression Test</h2>
+	<table border='1' align="center">
+		<tr>
+			<td>Tests passed/Failed/Skipped:</td>
+			<td>5/1/0</td>
+		</tr>
+		<tr>
+			<td>Started on:</td>
+			<td>Thu Jul 03 16:35:46 IST 2025</td>
+		</tr>
+		<tr>
+			<td>Total time:</td>
+			<td>410 seconds (410640 ms)</td>
+		</tr>
+		<tr>
+			<td>Included groups:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Excluded groups:</td>
+			<td></td>
+		</tr>
+	</table>
+	<p />
+	<small><i>(Hover the method name to see the test class
+			name)</i></small>
+	<p />
+	<table width='100%' border='1' class='invocation-failed'>
+		<tr>
+			<td colspan='4' align='center'><b>FAILED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td title='TestSuite.TC12_Verifyremoveprofilepicture.ProfilePcture()'><b>ProfilePcture</b><br>Test
+				class: TestSuite.TC12_Verifyremoveprofilepicture<br /> <a
+				href="#Output-1906128360"
+				onClick='toggleBox("Output-1906128360", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-1906128360" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-1906128360">
+					<a
+						href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Failure_Screenshots\ProfilePcture_03_07_2025_04_42_36.png'><img
+						src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Failure_Screenshots\ProfilePcture_03_07_2025_04_42_36.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Profile&apos;]&quot;}
   (Session info: chrome=137.0.7151.120)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
@@ -108,8 +134,13 @@ Session ID: 2d5c3888f5a9d5045e89d0a3bcc4058b
 	at com.surecafe.User.ClientLoginPage.deleterofilepicture(ClientLoginPage.java:854)
 	at TestSuite.TC12_Verifyremoveprofilepicture.ProfilePcture(TC12_Verifyremoveprofilepicture.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1906128360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1906128360'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Profile&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace1906128360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1906128360'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Profile&apos;]&quot;}
   (Session info: chrome=137.0.7151.120)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
@@ -166,77 +197,108 @@ Session ID: 2d5c3888f5a9d5045e89d0a3bcc4058b
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>46</td>
-<td>TestSuite.TC12_Verifyremoveprofilepicture@1c33c17b</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='TestSuite.TC13_Verifyaccountdeletefunctionality.Signin()'><b>Signin</b><br>Test class: TestSuite.TC13_Verifyaccountdeletefunctionality<br/>
-<a href="#Output-1664757401" onClick='toggleBox("Output-1664757401", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1664757401" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1664757401">
-<a href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_41_49.png'><img src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_41_49.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>64</td>
-<td>TestSuite.TC13_Verifyaccountdeletefunctionality@13ad5cd3</td></tr>
-<tr>
-<td title='TestSuite.TC10_Verifyjobtitlelink.Joblink()'><b>Joblink</b><br>Test class: TestSuite.TC10_Verifyjobtitlelink<br/>
-<a href="#Output-1329938019" onClick='toggleBox("Output-1329938019", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1329938019" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1329938019">
-<a href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Joblink_03_07_2025_04_37_44.png'><img src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Joblink_03_07_2025_04_37_44.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>60</td>
-<td>TestSuite.TC10_Verifyjobtitlelink@332796d3</td></tr>
-<tr>
-<td title='TestSuite.TC11_Verifysearchandjobtitlelink.Joblink()'><b>Joblink</b><br>Test class: TestSuite.TC11_Verifysearchandjobtitlelink<br/>
-<a href="#Output-1589931229" onClick='toggleBox("Output-1589931229", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1589931229" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1589931229">
-<a href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Joblink_03_07_2025_04_38_48.png'><img src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Joblink_03_07_2025_04_38_48.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>63</td>
-<td>TestSuite.TC11_Verifysearchandjobtitlelink@4f0100a7</td></tr>
-<tr>
-<td title='TestSuite.TC01_VerifyLogin.Signin()'><b>Signin</b><br>Test class: TestSuite.TC01_VerifyLogin<br/>
-<a href="#Output-773066329" onClick='toggleBox("Output-773066329", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-773066329" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-773066329">
-<a href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_36_43.png'><img src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_36_43.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>56</td>
-<td>TestSuite.TC01_VerifyLogin@5f354bcf</td></tr>
-<tr>
-<td title='TestSuite.TC14_Verifyprofileview.Signin()'><b>Signin</b><br>Test class: TestSuite.TC14_Verifyprofileview<br/>
-<a href="#Output-1172450799" onClick='toggleBox("Output-1172450799", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1172450799" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1172450799">
-<a href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_40_45.png'><img src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_40_45.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>116</td>
-<td>TestSuite.TC14_Verifyprofileview@3cdf2c61</td></tr>
-</table><p>
+</pre>
+				</div></td>
+			<td>46</td>
+			<td>TestSuite.TC12_Verifyremoveprofilepicture@1c33c17b</td>
+		</tr>
+	</table>
+	<p>
+	<table width='100%' border='1' class='invocation-passed'>
+		<tr>
+			<td colspan='4' align='center'><b>PASSED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td title='TestSuite.TC13_Verifyaccountdeletefunctionality.Signin()'><b>Signin</b><br>Test
+				class: TestSuite.TC13_Verifyaccountdeletefunctionality<br /> <a
+				href="#Output-1664757401"
+				onClick='toggleBox("Output-1664757401", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-1664757401" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-1664757401">
+					<a
+						href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_41_49.png'><img
+						src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_41_49.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td></td>
+			<td>64</td>
+			<td>TestSuite.TC13_Verifyaccountdeletefunctionality@13ad5cd3</td>
+		</tr>
+		<tr>
+			<td title='TestSuite.TC10_Verifyjobtitlelink.Joblink()'><b>Joblink</b><br>Test
+				class: TestSuite.TC10_Verifyjobtitlelink<br /> <a
+				href="#Output-1329938019"
+				onClick='toggleBox("Output-1329938019", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-1329938019" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-1329938019">
+					<a
+						href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Joblink_03_07_2025_04_37_44.png'><img
+						src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Joblink_03_07_2025_04_37_44.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td></td>
+			<td>60</td>
+			<td>TestSuite.TC10_Verifyjobtitlelink@332796d3</td>
+		</tr>
+		<tr>
+			<td title='TestSuite.TC11_Verifysearchandjobtitlelink.Joblink()'><b>Joblink</b><br>Test
+				class: TestSuite.TC11_Verifysearchandjobtitlelink<br /> <a
+				href="#Output-1589931229"
+				onClick='toggleBox("Output-1589931229", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-1589931229" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-1589931229">
+					<a
+						href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Joblink_03_07_2025_04_38_48.png'><img
+						src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Joblink_03_07_2025_04_38_48.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td></td>
+			<td>63</td>
+			<td>TestSuite.TC11_Verifysearchandjobtitlelink@4f0100a7</td>
+		</tr>
+		<tr>
+			<td title='TestSuite.TC01_VerifyLogin.Signin()'><b>Signin</b><br>Test
+				class: TestSuite.TC01_VerifyLogin<br /> <a href="#Output-773066329"
+				onClick='toggleBox("Output-773066329", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-773066329" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-773066329">
+					<a
+						href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_36_43.png'><img
+						src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_36_43.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td></td>
+			<td>56</td>
+			<td>TestSuite.TC01_VerifyLogin@5f354bcf</td>
+		</tr>
+		<tr>
+			<td title='TestSuite.TC14_Verifyprofileview.Signin()'><b>Signin</b><br>Test
+				class: TestSuite.TC14_Verifyprofileview<br /> <a
+				href="#Output-1172450799"
+				onClick='toggleBox("Output-1172450799", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-1172450799" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-1172450799">
+					<a
+						href='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_40_45.png'><img
+						src='C:\Users\Admin\Downloads\Automation (2)\Automation\src\main\java\com\surecafe\Success_Screenshots\Success_Screenshots\Signin_03_07_2025_04_40_45.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td></td>
+			<td>116</td>
+			<td>TestSuite.TC14_Verifyprofileview@3cdf2c61</td>
+		</tr>
+	</table>
+	<p>
 </body>
 </html>

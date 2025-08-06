@@ -1,12 +1,17 @@
 <html>
 <head>
-<title>TestNG:  Smoke Test</title>
+<title>TestNG: Smoke Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
-.log { display: none;} 
-.stack-trace { display: none;} 
+.log {
+	display: none;
+}
+
+.stack-trace {
+	display: none;
+}
 </style>
 <script type="text/javascript">
 <!--
@@ -53,37 +58,60 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Smoke Test</h2><table border='1' align="center">
-<tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/5/0</td>
-</tr><tr>
-<td>Started on:</td><td>Mon Nov 14 11:32:14 IST 2022</td>
-</tr>
-<tr><td>Total time:</td><td>1036 seconds (1036072 ms)</td>
-</tr><tr>
-<td>Included groups:</td><td></td>
-</tr><tr>
-<td>Excluded groups:</td><td></td>
-</tr>
-</table><p/>
-<small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.verifyForGrayOutForRepeatedDate()'><b>verifyForGrayOutForRepeatedDate</b><br>Test class: TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab<br/>
-<a href="#Output-635739314" onClick='toggleBox("Output-635739314", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-635739314" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-635739314">
-<a href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\verifyForGrayOutForRepeatedDate_14_11_2022_11_36_53.png'><img src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\verifyForGrayOutForRepeatedDate_14_11_2022_11_36_53.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+	<h2 align='center'>Smoke Test</h2>
+	<table border='1' align="center">
+		<tr>
+			<td>Tests passed/Failed/Skipped:</td>
+			<td>3/5/0</td>
+		</tr>
+		<tr>
+			<td>Started on:</td>
+			<td>Mon Nov 14 11:32:14 IST 2022</td>
+		</tr>
+		<tr>
+			<td>Total time:</td>
+			<td>1036 seconds (1036072 ms)</td>
+		</tr>
+		<tr>
+			<td>Included groups:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Excluded groups:</td>
+			<td></td>
+		</tr>
+	</table>
+	<p />
+	<small><i>(Hover the method name to see the test class
+			name)</i></small>
+	<p />
+	<table width='100%' border='1' class='invocation-failed'>
+		<tr>
+			<td colspan='4' align='center'><b>FAILED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.verifyForGrayOutForRepeatedDate()'><b>verifyForGrayOutForRepeatedDate</b><br>Test
+				class:
+				TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab<br />
+				<a href="#Output-635739314"
+				onClick='toggleBox("Output-635739314", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-635739314" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-635739314">
+					<a
+						href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\verifyForGrayOutForRepeatedDate_14_11_2022_11_36_53.png'><img
+						src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\verifyForGrayOutForRepeatedDate_14_11_2022_11_36_53.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
@@ -108,8 +136,13 @@ Session ID: d80b54e2497eb78d37fdab37db94e72e
 	at com.photographers.client.CalendarPage.navigateToMonthAndDate(CalendarPage.java:428)
 	at TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.verifyForGrayOutForRepeatedDate(TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.java:63)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace635739314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace635739314'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace635739314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace635739314'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
@@ -166,19 +199,28 @@ Session ID: d80b54e2497eb78d37fdab37db94e72e
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>236</td>
-<td>TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab@61fe30</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeOrderAndGetOrderName()'><b>placeOrderAndGetOrderName</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br/>
-<a href="#Output-838820617" onClick='toggleBox("Output-838820617", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-838820617" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-838820617">
-<a href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\placeOrderAndGetOrderName_14_11_2022_11_40_59.png'><img src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\placeOrderAndGetOrderName_14_11_2022_11_40_59.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;attributes_12&apos;]&quot;}
+</pre>
+				</div></td>
+			<td>236</td>
+			<td>TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab@61fe30</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeOrderAndGetOrderName()'><b>placeOrderAndGetOrderName</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br />
+				<a href="#Output-838820617"
+				onClick='toggleBox("Output-838820617", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-838820617" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-838820617">
+					<a
+						href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\placeOrderAndGetOrderName_14_11_2022_11_40_59.png'><img
+						src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\placeOrderAndGetOrderName_14_11_2022_11_40_59.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;attributes_12&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
@@ -204,8 +246,13 @@ Session ID: dbb2b09b3dc59060f86b687e1f0e92ea
 	at com.photographers.client.CalendarPage.placeOrderForMinCapacityCheck(CalendarPage.java:1011)
 	at TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeOrderAndGetOrderName(TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace838820617", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace838820617'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;attributes_12&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace838820617", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace838820617'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;attributes_12&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
@@ -263,19 +310,28 @@ Session ID: dbb2b09b3dc59060f86b687e1f0e92ea
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>222</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeAnothgerOrderFromMultipleUsers()'><b>placeAnothgerOrderFromMultipleUsers</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br/>
-<a href="#Output-727273502" onClick='toggleBox("Output-727273502", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-727273502" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-727273502">
-<a href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\placeAnothgerOrderFromMultipleUsers_14_11_2022_11_44_41.png'><img src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\placeAnothgerOrderFromMultipleUsers_14_11_2022_11_44_41.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;attributes_12&apos;]&quot;}
+</pre>
+				</div></td>
+			<td>222</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeAnothgerOrderFromMultipleUsers()'><b>placeAnothgerOrderFromMultipleUsers</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br />
+				<a href="#Output-727273502"
+				onClick='toggleBox("Output-727273502", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-727273502" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-727273502">
+					<a
+						href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\placeAnothgerOrderFromMultipleUsers_14_11_2022_11_44_41.png'><img
+						src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\placeAnothgerOrderFromMultipleUsers_14_11_2022_11_44_41.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;attributes_12&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
@@ -301,8 +357,13 @@ Session ID: 7842b78d7840599a2d43b226cec217c7
 	at com.photographers.client.CalendarPage.placeOrderForMinCapacityCheck(CalendarPage.java:1011)
 	at TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeAnothgerOrderFromMultipleUsers(TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.java:96)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace727273502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace727273502'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;attributes_12&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace727273502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace727273502'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;attributes_12&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
@@ -360,25 +421,39 @@ Session ID: 7842b78d7840599a2d43b226cec217c7
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>221</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.verifyReleaseCapacityByCompletingOrder()'><b>verifyReleaseCapacityByCompletingOrder</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br/>
-<a href="#Output-377957453" onClick='toggleBox("Output-377957453", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-377957453" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-377957453">
-<a href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\verifyReleaseCapacityByCompletingOrder_14_11_2022_11_46_23.png'><img src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\verifyReleaseCapacityByCompletingOrder_14_11_2022_11_46_23.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td><div><pre>java.lang.NumberFormatException: Cannot parse null string
+</pre>
+				</div></td>
+			<td>221</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.verifyReleaseCapacityByCompletingOrder()'><b>verifyReleaseCapacityByCompletingOrder</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br />
+				<a href="#Output-377957453"
+				onClick='toggleBox("Output-377957453", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-377957453" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-377957453">
+					<a
+						href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\verifyReleaseCapacityByCompletingOrder_14_11_2022_11_46_23.png'><img
+						src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\verifyReleaseCapacityByCompletingOrder_14_11_2022_11_46_23.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td><div>
+					<pre>java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:630)
 	at java.base/java.lang.Integer.parseInt(Integer.java:786)
 	at TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.verifyReleaseCapacityByCompletingOrder(TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.java:131)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace377957453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace377957453'><pre>java.lang.NumberFormatException: Cannot parse null string
+... Removed 27 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace377957453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace377957453'>
+					<pre>java.lang.NumberFormatException: Cannot parse null string
 	at java.base/java.lang.Integer.parseInt(Integer.java:630)
 	at java.base/java.lang.Integer.parseInt(Integer.java:786)
 	at TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.verifyReleaseCapacityByCompletingOrder(TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.java:131)
@@ -410,19 +485,28 @@ Session ID: 7842b78d7840599a2d43b226cec217c7
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>28</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.bookAnotherOrder()'><b>bookAnotherOrder</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br/>
-<a href="#Output-1611966906" onClick='toggleBox("Output-1611966906", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1611966906" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1611966906">
-<a href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\bookAnotherOrder_14_11_2022_11_45_53.png'><img src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\bookAnotherOrder_14_11_2022_11_45_53.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;my-input&apos;]&quot;}
+</pre>
+				</div></td>
+			<td>28</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.bookAnotherOrder()'><b>bookAnotherOrder</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br />
+				<a href="#Output-1611966906"
+				onClick='toggleBox("Output-1611966906", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-1611966906" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-1611966906">
+					<a
+						href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\bookAnotherOrder_14_11_2022_11_45_53.png'><img
+						src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Failure_Screenshots\bookAnotherOrder_14_11_2022_11_45_53.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;my-input&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
@@ -447,8 +531,13 @@ Session ID: 2666984722339e580aa835bf739c878c
 	at com.photographers.client.CalendarPage.grayOutDates(CalendarPage.java:1274)
 	at TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.bookAnotherOrder(TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.java:112)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1611966906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1611966906'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;my-input&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace1611966906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1611966906'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;my-input&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
@@ -505,53 +594,81 @@ Session ID: 2666984722339e580aa835bf739c878c
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>71</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placingOrderAfterReleaseCapacity()'><b>placingOrderAfterReleaseCapacity</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br/>
-<a href="#Output-1057263702" onClick='toggleBox("Output-1057263702", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1057263702" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1057263702">
-<a href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\placingOrderAfterReleaseCapacity_14_11_2022_11_49_30.png'><img src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\placingOrderAfterReleaseCapacity_14_11_2022_11_49_30.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>186</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.setDailyCapacity()'><b>setDailyCapacity</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br/>
-<a href="#Output-609116570" onClick='toggleBox("Output-609116570", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-609116570" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-609116570">
-<a href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\setDailyCapacity_14_11_2022_11_37_17.png'><img src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\setDailyCapacity_14_11_2022_11_37_17.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>22</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td></tr>
-<tr>
-<td title='TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.enterCapacityForSelectedDate()'><b>enterCapacityForSelectedDate</b><br>Test class: TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab<br/>
-<a href="#Output-101601906" onClick='toggleBox("Output-101601906", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-101601906" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-101601906">
-<a href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\enterCapacityForSelectedDate_14_11_2022_11_32_55.png'><img src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\enterCapacityForSelectedDate_14_11_2022_11_32_55.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>41</td>
-<td>TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab@61fe30</td></tr>
-</table><p>
+</pre>
+				</div></td>
+			<td>71</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td>
+		</tr>
+	</table>
+	<p>
+	<table width='100%' border='1' class='invocation-passed'>
+		<tr>
+			<td colspan='4' align='center'><b>PASSED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placingOrderAfterReleaseCapacity()'><b>placingOrderAfterReleaseCapacity</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br />
+				<a href="#Output-1057263702"
+				onClick='toggleBox("Output-1057263702", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-1057263702" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-1057263702">
+					<a
+						href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\placingOrderAfterReleaseCapacity_14_11_2022_11_49_30.png'><img
+						src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\placingOrderAfterReleaseCapacity_14_11_2022_11_49_30.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td></td>
+			<td>186</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.setDailyCapacity()'><b>setDailyCapacity</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity<br />
+				<a href="#Output-609116570"
+				onClick='toggleBox("Output-609116570", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-609116570" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-609116570">
+					<a
+						href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\setDailyCapacity_14_11_2022_11_37_17.png'><img
+						src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\setDailyCapacity_14_11_2022_11_37_17.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td></td>
+			<td>22</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@3b96c42e</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.enterCapacityForSelectedDate()'><b>enterCapacityForSelectedDate</b><br>Test
+				class:
+				TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab<br />
+				<a href="#Output-101601906"
+				onClick='toggleBox("Output-101601906", this, "Show output", "Hide output");'>Show
+					output</a> <a href="#Output-101601906" onClick="toggleAllBoxes();">Show
+					all outputs</a>
+				<div class='log' id="Output-101601906">
+					<a
+						href='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\enterCapacityForSelectedDate_14_11_2022_11_32_55.png'><img
+						src='C:\PE Automation\photographersedit\src\main\java\com\photographersedit\Success_Screenshots\enterCapacityForSelectedDate_14_11_2022_11_32_55.png'
+						height='100' width='100' /></a><br />
+				</div></td>
+			<td></td>
+			<td>41</td>
+			<td>TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab@61fe30</td>
+		</tr>
+	</table>
+	<p>
 </body>
 </html>

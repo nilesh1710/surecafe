@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" parallel="tests" name="Failed suite [Gmail Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" parallel="tests" name="test1(failed)">
-    <classes>
-      <class name="sampletest.test1">
-        <methods>
-          <include name="verifysampletest"/>
-        </methods>
-      </class> <!-- sampletest.test1 -->
-    </classes>
-  </test> <!-- test1(failed) -->
+<suite thread-count="1" parallel="tests"
+	name="Failed suite [Gmail Suite]" guice-stage="DEVELOPMENT">
+	<test thread-count="1" parallel="tests" name="test1(failed)">
+		<classes>
+			<class name="sampletest.test1">
+				<methods>
+					<include name="verifysampletest" />
+				</methods>
+			</class> <!-- sampletest.test1 -->
+		</classes>
+	</test> <!-- test1(failed) -->
 </suite> <!-- Failed suite [Gmail Suite] -->

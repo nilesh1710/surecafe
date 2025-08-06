@@ -1,19 +1,19 @@
 <?sxml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="AutomationTestSuite">
-<listeners>
-	<listener class-name="com.surecafe.CustomListener.Listener"></listener>
-	
-</listeners>
-  <test name="Regression Test">
-	<classes>
-			 <class name="TestSuite.TC01_VerifyLogin"/>
-			<class name="TestSuite.TC10_Verifyjobtitlelink"/>
-			<class name="TestSuite.TC11_Verifysearchandjobtitlelink"/>
-			<class name="TestSuite.TC14_Verifyprofileview"/>
-			<class name="TestSuite.TC13_Verifyaccountdeletefunctionality"/>
-			<class name="TestSuite.TC12_Verifyremoveprofilepicture"/>
-					
-				</classes>
-  </test> <!-- Test -->
+	<listeners>
+		<listener class-name="com.surecafe.CustomListener.Listener"></listener>
+
+	</listeners>
+	<test name="Regression Test">
+		<classes>
+			<class name="TestSuite.TC01_VerifyLogin" />
+			<class name="TestSuite.TC10_Verifyjobtitlelink" />
+			<class name="TestSuite.TC11_Verifysearchandjobtitlelink" />
+			<class name="TestSuite.TC14_Verifyprofileview" />
+			<class name="TestSuite.TC13_Verifyaccountdeletefunctionality" />
+			<class name="TestSuite.TC12_Verifyremoveprofilepicture" />
+
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- AutomationSuite -->

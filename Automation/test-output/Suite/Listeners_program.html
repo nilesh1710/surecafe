@@ -1,12 +1,17 @@
 <html>
 <head>
-<title>TestNG:  Listeners_program</title>
+<title>TestNG: Listeners_program</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
-.log { display: none;} 
-.stack-trace { display: none;} 
+.log {
+	display: none;
+}
+
+.stack-trace {
+	display: none;
+}
 </style>
 <script type="text/javascript">
 <!--
@@ -53,30 +58,50 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Listeners_program</h2><table border='1' align="center">
-<tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/9/0</td>
-</tr><tr>
-<td>Started on:</td><td>Sun Nov 06 20:12:25 IST 2022</td>
-</tr>
-<tr><td>Total time:</td><td>2065 seconds (2065703 ms)</td>
-</tr><tr>
-<td>Included groups:</td><td></td>
-</tr><tr>
-<td>Excluded groups:</td><td></td>
-</tr>
-</table><p/>
-<small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.verifyForGrayOutForRepeatedDate()'><b>verifyForGrayOutForRepeatedDate</b><br>Test class: TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+	<h2 align='center'>Listeners_program</h2>
+	<table border='1' align="center">
+		<tr>
+			<td>Tests passed/Failed/Skipped:</td>
+			<td>3/9/0</td>
+		</tr>
+		<tr>
+			<td>Started on:</td>
+			<td>Sun Nov 06 20:12:25 IST 2022</td>
+		</tr>
+		<tr>
+			<td>Total time:</td>
+			<td>2065 seconds (2065703 ms)</td>
+		</tr>
+		<tr>
+			<td>Included groups:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Excluded groups:</td>
+			<td></td>
+		</tr>
+	</table>
+	<p />
+	<small><i>(Hover the method name to see the test class
+			name)</i></small>
+	<p />
+	<table width='100%' border='1' class='invocation-failed'>
+		<tr>
+			<td colspan='4' align='center'><b>FAILED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.verifyForGrayOutForRepeatedDate()'><b>verifyForGrayOutForRepeatedDate</b><br>Test
+				class:
+				TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab</td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -102,8 +127,13 @@ Session ID: b969cde018b2fb48051b3134c83533cf
 	at com.photographers.client.CalendarPage.navigateToMonthAndDate(CalendarPage.java:424)
 	at TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.verifyForGrayOutForRepeatedDate(TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1798194863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1798194863'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace1798194863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1798194863'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -161,12 +191,18 @@ Session ID: b969cde018b2fb48051b3134c83533cf
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>174</td>
-<td>TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab@2e6a8155</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.bookAnotherOrder()'><b>bookAnotherOrder</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;my-input&apos;]&quot;}
+</pre>
+				</div></td>
+			<td>174</td>
+			<td>TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab@2e6a8155</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.bookAnotherOrder()'><b>bookAnotherOrder</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;my-input&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -192,8 +228,13 @@ Session ID: 991d8091c03695f5533445e675c116f3
 	at com.photographers.client.CalendarPage.grayOutDates(CalendarPage.java:1270)
 	at TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.bookAnotherOrder(TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.java:87)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1772358460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1772358460'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;my-input&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace1772358460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1772358460'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;my-input&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -251,12 +292,18 @@ Session ID: 991d8091c03695f5533445e675c116f3
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>68</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeOrderAndGetOrderName()'><b>placeOrderAndGetOrderName</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+</pre>
+				</div></td>
+			<td>68</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeOrderAndGetOrderName()'><b>placeOrderAndGetOrderName</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -282,8 +329,13 @@ Session ID: 4bfaf303b8c313715fe49cb7e0638771
 	at com.photographers.client.CalendarPage.PlaceOrderForMinCapacityCheck(CalendarPage.java:925)
 	at TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeOrderAndGetOrderName(TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace704832331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace704832331'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace704832331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace704832331'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -341,16 +393,27 @@ Session ID: 4bfaf303b8c313715fe49cb7e0638771
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>101</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.verifyReleaseCapacityByCompletingOrder()'><b>verifyReleaseCapacityByCompletingOrder</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
-<td><div><pre>java.lang.AssertionError: expected [2400] but found [800]
+</pre>
+				</div></td>
+			<td>101</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.verifyReleaseCapacityByCompletingOrder()'><b>verifyReleaseCapacityByCompletingOrder</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
+			<td><div>
+					<pre>java.lang.AssertionError: expected [2400] but found [800]
 	at TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.verifyReleaseCapacityByCompletingOrder(TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.java:109)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace734897812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace734897812'><pre>java.lang.AssertionError: expected [2400] but found [800]
+... Removed 33 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace734897812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace734897812'>
+					<pre>java.lang.AssertionError: expected [2400] but found [800]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -386,12 +449,17 @@ Session ID: 4bfaf303b8c313715fe49cb7e0638771
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>211</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td></tr>
-<tr>
-<td title='TestSuite.TC04_VerifyMinimumCapacity.verifyMinimumCapacityByReservingDate()'><b>verifyMinimumCapacityByReservingDate</b><br>Test class: TestSuite.TC04_VerifyMinimumCapacity</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+</pre>
+				</div></td>
+			<td>211</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC04_VerifyMinimumCapacity.verifyMinimumCapacityByReservingDate()'><b>verifyMinimumCapacityByReservingDate</b><br>Test
+				class: TestSuite.TC04_VerifyMinimumCapacity</td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -417,8 +485,13 @@ Session ID: 03c5da7073df9e35642747e340d4a01a
 	at com.photographers.client.CalendarPage.PlaceOrderForMinCapacityCheck(CalendarPage.java:925)
 	at TestSuite.TC04_VerifyMinimumCapacity.verifyMinimumCapacityByReservingDate(TC04_VerifyMinimumCapacity.java:81)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1322600748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1322600748'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace1322600748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1322600748'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -476,12 +549,18 @@ Session ID: 03c5da7073df9e35642747e340d4a01a
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>107</td>
-<td>TestSuite.TC04_VerifyMinimumCapacity@229c6181</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeAnothgerOrderFromMultipleUsers()'><b>placeAnothgerOrderFromMultipleUsers</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+</pre>
+				</div></td>
+			<td>107</td>
+			<td>TestSuite.TC04_VerifyMinimumCapacity@229c6181</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeAnothgerOrderFromMultipleUsers()'><b>placeAnothgerOrderFromMultipleUsers</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -507,8 +586,13 @@ Session ID: 154049f54812034ce4f18d6ce81a7b63
 	at com.photographers.client.CalendarPage.PlaceOrderForMinCapacityCheck(CalendarPage.java:925)
 	at TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placeAnothgerOrderFromMultipleUsers(TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.java:69)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace521528969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace521528969'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace521528969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace521528969'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -566,12 +650,18 @@ Session ID: 154049f54812034ce4f18d6ce81a7b63
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>102</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placingOrderAfterReleaseCapacity()'><b>placingOrderAfterReleaseCapacity</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+</pre>
+				</div></td>
+			<td>102</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placingOrderAfterReleaseCapacity()'><b>placingOrderAfterReleaseCapacity</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -597,8 +687,13 @@ Session ID: d956480c406c96dfc4281037d4cd54b0
 	at com.photographers.client.CalendarPage.PlaceOrderForMinCapacityCheck(CalendarPage.java:925)
 	at TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.placingOrderAfterReleaseCapacity(TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.java:125)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1756872139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1756872139'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace1756872139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1756872139'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -656,16 +751,26 @@ Session ID: d956480c406c96dfc4281037d4cd54b0
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>102</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td></tr>
-<tr>
-<td title='TestSuite.TC04_VerifyMinimumCapacity.checkMinCapacityAfterPlacingOrder()'><b>checkMinCapacityAfterPlacingOrder</b><br>Test class: TestSuite.TC04_VerifyMinimumCapacity</td>
-<td><div><pre>java.lang.AssertionError: expected [800] but found [0]
+</pre>
+				</div></td>
+			<td>102</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC04_VerifyMinimumCapacity.checkMinCapacityAfterPlacingOrder()'><b>checkMinCapacityAfterPlacingOrder</b><br>Test
+				class: TestSuite.TC04_VerifyMinimumCapacity</td>
+			<td><div>
+					<pre>java.lang.AssertionError: expected [800] but found [0]
 	at TestSuite.TC04_VerifyMinimumCapacity.checkMinCapacityAfterPlacingOrder(TC04_VerifyMinimumCapacity.java:69)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1809970047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1809970047'><pre>java.lang.AssertionError: expected [800] but found [0]
+... Removed 33 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace1809970047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1809970047'>
+					<pre>java.lang.AssertionError: expected [800] but found [0]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -701,12 +806,17 @@ Session ID: d956480c406c96dfc4281037d4cd54b0
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>280</td>
-<td>TestSuite.TC04_VerifyMinimumCapacity@229c6181</td></tr>
-<tr>
-<td title='TestSuite.TC04_VerifyMinimumCapacity.verifyMinimumCapacityByPlacingOrder()'><b>verifyMinimumCapacityByPlacingOrder</b><br>Test class: TestSuite.TC04_VerifyMinimumCapacity</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+</pre>
+				</div></td>
+			<td>280</td>
+			<td>TestSuite.TC04_VerifyMinimumCapacity@229c6181</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC04_VerifyMinimumCapacity.verifyMinimumCapacityByPlacingOrder()'><b>verifyMinimumCapacityByPlacingOrder</b><br>Test
+				class: TestSuite.TC04_VerifyMinimumCapacity</td>
+			<td><div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -732,8 +842,13 @@ Session ID: ce930ec47b5e7a7e2695052ad72e4106
 	at com.photographers.client.CalendarPage.PlaceOrderForMinCapacityCheck(CalendarPage.java:925)
 	at TestSuite.TC04_VerifyMinimumCapacity.verifyMinimumCapacityByPlacingOrder(TC04_VerifyMinimumCapacity.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1468882178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1468882178'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
+... Removed 32 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace1468882178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1468882178'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;order_name&apos;]&quot;}
   (Session info: chrome=105.0.5195.128)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
@@ -791,32 +906,50 @@ Session ID: ce930ec47b5e7a7e2695052ad72e4106
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>369</td>
-<td>TestSuite.TC04_VerifyMinimumCapacity@229c6181</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.enterCapacityForSelectedDate()'><b>enterCapacityForSelectedDate</b><br>Test class: TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab</td>
-<td></td>
-<td>29</td>
-<td>TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab@2e6a8155</td></tr>
-<tr>
-<td title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.setDailyCapacity()'><b>setDailyCapacity</b><br>Test class: TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
-<td></td>
-<td>201</td>
-<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td></tr>
-<tr>
-<td title='TestSuite.TC03_VerifyGrayoutDatesWhenWeekdayCapacityIsToZero.setCapacityZeroOnWeekDay()'><b>setCapacityZeroOnWeekDay</b><br>Test class: TestSuite.TC03_VerifyGrayoutDatesWhenWeekdayCapacityIsToZero</td>
-<td></td>
-<td>309</td>
-<td>TestSuite.TC03_VerifyGrayoutDatesWhenWeekdayCapacityIsToZero@4d154ccd</td></tr>
-</table><p>
+</pre>
+				</div></td>
+			<td>369</td>
+			<td>TestSuite.TC04_VerifyMinimumCapacity@229c6181</td>
+		</tr>
+	</table>
+	<p>
+	<table width='100%' border='1' class='invocation-passed'>
+		<tr>
+			<td colspan='4' align='center'><b>PASSED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab.enterCapacityForSelectedDate()'><b>enterCapacityForSelectedDate</b><br>Test
+				class:
+				TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab</td>
+			<td></td>
+			<td>29</td>
+			<td>TestSuite.TC01_VerifyGrayoutIfPlacigOrderAgainWithSameImagesSlab@2e6a8155</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity.setDailyCapacity()'><b>setDailyCapacity</b><br>Test
+				class:
+				TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity</td>
+			<td></td>
+			<td>201</td>
+			<td>TestSuite.TC02_VerifyGrayOutForNewOrdersAndPlaceOrdersAfterReleaseCapacity@65c7a252</td>
+		</tr>
+		<tr>
+			<td
+				title='TestSuite.TC03_VerifyGrayoutDatesWhenWeekdayCapacityIsToZero.setCapacityZeroOnWeekDay()'><b>setCapacityZeroOnWeekDay</b><br>Test
+				class: TestSuite.TC03_VerifyGrayoutDatesWhenWeekdayCapacityIsToZero</td>
+			<td></td>
+			<td>309</td>
+			<td>TestSuite.TC03_VerifyGrayoutDatesWhenWeekdayCapacityIsToZero@4d154ccd</td>
+		</tr>
+	</table>
+	<p>
 </body>
 </html>
