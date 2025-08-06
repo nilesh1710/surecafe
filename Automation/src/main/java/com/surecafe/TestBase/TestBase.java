@@ -317,8 +317,8 @@ public class TestBase {
 
 	public static void click_Element_Using_Actions(WebElement ele) 
 	{
-	Actions actions = new Actions(driver);
-	actions.moveToElement(ele).click().perform();
+	//Actions actions = new Actions(driver);
+	//actions.moveToElement(ele).click().perform();
 	}
 	
 	

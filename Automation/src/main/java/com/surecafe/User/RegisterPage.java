@@ -328,8 +328,8 @@ public class RegisterPage extends TestBase {
 		driver.navigate().refresh();
 		wait_in_seconds(10);
 		WebElement upload = driver.findElement(By.xpath("//*[@id='resume_file_upload']"));
-		Actions act = new Actions(driver);
-		act.moveToElement(upload).click().perform();
+		//Actions act = new Actions(driver);
+		//act.moveToElement(upload).click().perform();
 		wait_in_seconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\DerekSmith(1).doc");
 		uploadResumeSubmitButton.click();

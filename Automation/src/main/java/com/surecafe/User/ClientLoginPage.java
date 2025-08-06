@@ -1015,10 +1015,10 @@ public class ClientLoginPage extends TestBase {
 		wait_in_seconds(10);
 		profilepicture.click();
 		wait_in_seconds(10);
-		Actions act = new Actions(driver);
+		//Actions act = new Actions(driver);
 		WebElement upload = driver.findElement(By.xpath("//*[@id=\"home\"]/form/div/div[3]/div[1]/div[1]/input"));
 		//WebElement upload = driver.findElement(By.xpath("//i[@class='fa fa-camera']"));
-		act.moveToElement(upload).click().perform();
+		//act.moveToElement(upload).click().perform();
 		//For Negative testing change the upload file path and file types.
 		file_upload("C:\\Users\\Admin\\Desktop\\Tesst Data\\surecafetest.jpg");
 	}
@@ -1032,8 +1032,8 @@ public class ClientLoginPage extends TestBase {
 		//click_Element_Using_JS(Uploadimage);
 		wait_in_seconds(5);
 		WebElement upload = driver.findElement(By.xpath("//*[@id=\"home\"]/form/div/div[3]/div[1]/div[1]/input"));
-		Actions act = new Actions(driver);
-		act.moveToElement(upload).click().perform();
+	//	Actions act = new Actions(driver);
+	//	act.moveToElement(upload).click().perform();
 		wait_in_seconds(5);
 		//For Negative testing change the upload file path and file types.
 		file_upload("C:\\Users\\Admin\\Desktop\\Tesst Data\\surecafetest.jpg");
@@ -1050,8 +1050,8 @@ public class ClientLoginPage extends TestBase {
 		
 		//WebElement upload = driver.findElement(By.xpath("//div[@id='home']//form//span/i"));
 		WebElement upload = driver.findElement(By.xpath("//input[@type='file' and contains(@class, 'inpt140')]"));
-		Actions act = new Actions(driver);
-		act.moveToElement(upload).click().perform();
+	//	Actions act = new Actions();
+	//	act.moveToElement(upload).click().perform();
 		wait_in_seconds(5);
 		//For Negative testing change the upload file path and file types.
 		file_upload("C:\\Users\\Admin\\Downloads\\Testprofile.docx");
@@ -1893,8 +1893,8 @@ public class ClientLoginPage extends TestBase {
 		click_Element_Using_JS(documentTypeDEA); // documentTypeECFMG.click();
 		wait_in_seconds(5);
 		WebElement upload = driver.findElement(By.xpath("//input[@class='fileUpload inputOtherBrd']"));
-		Actions act = new Actions(driver);
-		act.moveToElement(upload).click().perform();
+	//	Actions act = new Actions(driver);
+		///act.moveToElement(upload).click().perform();
 		waitInSeconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\Anil_Kumar_Salesforce_Admin.docx");
 		waitInSeconds(10);
@@ -1905,8 +1905,8 @@ public class ClientLoginPage extends TestBase {
 		documentTypeResidency.click();
 		wait_in_seconds(5);
 		WebElement upload1 = driver.findElement(By.xpath("//input[@class='fileUpload inputOtherBrd']"));
-		Actions act1 = new Actions(driver);
-		act1.moveToElement(upload1).click().perform();
+		//Actions act1 = new Actions(driver);
+		//act1.moveToElement(upload1).click().perform();
 		waitInSeconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\DerekSmith(1).doc");
 		waitInSeconds(10);
@@ -1919,8 +1919,8 @@ public class ClientLoginPage extends TestBase {
 		// documentTypeStateControlledSubstance.click();
 		wait_in_seconds(5);
 		WebElement upload2 = driver.findElement(By.xpath("//input[@class='fileUpload inputOtherBrd']"));
-		Actions act2 = new Actions(driver);
-		act2.moveToElement(upload2).click().perform();
+		//Actions act2 = new Actions(driver);
+		//act2.moveToElement(upload2).click().perform();
 		waitInSeconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\Dice_Resume_CV_Akash_Patel.pdf");
 		waitInSeconds(10);
@@ -1931,8 +1931,8 @@ public class ClientLoginPage extends TestBase {
 		documentTypeMedicalLicence.click();
 		wait_in_seconds(5);
 		WebElement upload3 = driver.findElement(By.xpath("//input[@class='fileUpload inputOtherBrd']"));
-		Actions act3 = new Actions(driver);
-		act3.moveToElement(upload3).click().perform();
+		//Actions act3 = new Actions(driver);
+		//act3.moveToElement(upload3).click().perform();
 		waitInSeconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\DerekSmith.odt");
 		waitInSeconds(10);
@@ -1943,8 +1943,8 @@ public class ClientLoginPage extends TestBase {
 		documentTypeMedicalDegree.click();
 		wait_in_seconds(5);
 		WebElement upload4 = driver.findElement(By.xpath("//input[@class='fileUpload inputOtherBrd']"));
-		Actions act4 = new Actions(driver);
-		act4.moveToElement(upload4).click().perform();
+	//	Actions act4 = new Actions(driver);
+	//	act4.moveToElement(upload4).click().perform();
 		waitInSeconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\surecafetest.jpeg");
 		waitInSeconds(10);
@@ -1955,8 +1955,8 @@ public class ClientLoginPage extends TestBase {
 		documentTypeIntershipcertificate.click();
 		wait_in_seconds(5);
 		WebElement upload5 = driver.findElement(By.xpath("//input[@class='fileUpload inputOtherBrd']"));
-		Actions act5 = new Actions(driver);
-		act5.moveToElement(upload5).click().perform();
+		//Actions act5 = new Actions(driver);
+		//act5.moveToElement(upload5).click().perform();
 		waitInSeconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\surecafetest.jpg");
 		waitInSeconds(10);
@@ -1967,8 +1967,8 @@ public class ClientLoginPage extends TestBase {
 		documentTypeFellowshipcertificate.click();
 		wait_in_seconds(5);
 		WebElement upload6 = driver.findElement(By.xpath("//input[@class='fileUpload inputOtherBrd']"));
-		Actions act6 = new Actions(driver);
-		act6.moveToElement(upload6).click().perform();
+		///Actions act6 = new Actions(driver);
+		//act6.moveToElement(upload6).click().perform();
 		waitInSeconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\surecafetest.png");
 		waitInSeconds(10);
@@ -1979,8 +1979,8 @@ public class ClientLoginPage extends TestBase {
 		documentTypeECFMG.click();
 		wait_in_seconds(5);
 		WebElement upload7 = driver.findElement(By.xpath("//input[@class='fileUpload inputOtherBrd']"));
-		Actions act7 = new Actions(driver);
-		act7.moveToElement(upload7).click().perform();
+		//Actions act7 = new Actions(driver);
+		//act7.moveToElement(upload7).click().perform();
 		waitInSeconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\surecafetest.gif");
 		waitInSeconds(10);
@@ -1991,8 +1991,8 @@ public class ClientLoginPage extends TestBase {
 		documentTypeBoardcertificate.click();
 		wait_in_seconds(5);
 		WebElement upload8 = driver.findElement(By.xpath("//input[@class='fileUpload inputOtherBrd']"));
-		Actions act8 = new Actions(driver);
-		act8.moveToElement(upload8).click().perform();
+		//Actions act8 = new Actions(driver);
+		//act8.moveToElement(upload8).click().perform();
 		waitInSeconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\PavanKalyan-Data Engineer.docx");
 		waitInSeconds(10);
@@ -2003,8 +2003,7 @@ public class ClientLoginPage extends TestBase {
 		documentTypeother.click();
 		wait_in_seconds(5);
 		WebElement upload9 = driver.findElement(By.xpath("//input[@class='fileUpload inputOtherBrd']"));
-		Actions act9 = new Actions(driver);
-		act9.moveToElement(upload9).click().perform();
+		//Actions act9 = new Actions(driver);
 		waitInSeconds(5);
 		file_upload("C:\\Users\\Admin\\Downloads\\Harideep.docx");
 		waitInSeconds(10);

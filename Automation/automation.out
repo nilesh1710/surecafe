@@ -22115,3 +22115,7 @@ Session ID: bed7136c401810e1016909ec0b84acef
 2025-08-01 17:08:00 INFO  ClientLoginPage:2162 - Clicking on accept button
 2025-08-01 17:08:28 INFO  TC08_Verifyloginbyexcel:70 - <===========Started Verifying Login Functionality===========> 
 2025-08-01 17:08:44 INFO  ClientLoginPage:2162 - Clicking on accept button
+2025-08-06 16:17:48 INFO  TC_15LoginTest:49 - <=========== Started Verifying Signin ===========> 
+2025-08-06 16:18:56 INFO  TC_15LoginTest:49 - <=========== Started Verifying Signin ===========> 
+2025-08-06 16:20:05 INFO  TC01_VerifyLogin:39 - <=========== Started Verifying Signin ===========> 
+2025-08-06 16:20:38 INFO  TC02_VerifySignup:43 - <=========== Started Verifying Signup ===========> 

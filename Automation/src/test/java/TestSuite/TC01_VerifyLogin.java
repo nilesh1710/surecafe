@@ -44,6 +44,7 @@ public class TC01_VerifyLogin extends TestBase {
 				//clp.profileview();
 		clp.Logout();
 	}
+	//for report generate
 	@AfterMethod
 	public void afterMethod(ITestResult result) {
 		get_result(result);
