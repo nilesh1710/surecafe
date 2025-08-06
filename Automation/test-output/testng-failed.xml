@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="TestSuite.TC08_Verifyloginbyexcel">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="verifyLoginFunctionality" invocation-numbers="0 2 3"/>
+        </methods>
+      </class> <!-- TestSuite.TC08_Verifyloginbyexcel -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
